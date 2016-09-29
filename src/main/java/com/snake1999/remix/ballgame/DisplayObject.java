@@ -1,6 +1,6 @@
 package com.snake1999.remix.ballgame;
 
-import com.snake1999.remix.ObjectMass;
+import java.awt.*;
 
 /**
  * Created by Administrator on 2016/9/29 0029.
@@ -8,4 +8,8 @@ import com.snake1999.remix.ObjectMass;
 public interface DisplayObject {
 
     ObjectMass getMass();
+
+
+
+    void drawTo(Graphics2D target);
 }
