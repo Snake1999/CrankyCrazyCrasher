@@ -5,11 +5,13 @@ package com.snake1999.remix.ballgame.math;
  */
 public interface Vector2D {
 
-    double getX();
+    Vector2D ZERO = new V2DBase();
 
-    double getY();
+    int getX();
 
-    default double distanceTo(Vector2D a) {
+    int getY();
+
+    default int distanceTo(Vector2D a) {
         return $CollidingTool.distance(this, a);
     }
 
@@ -17,5 +19,5 @@ public interface Vector2D {
 
     Vector2D minus(Vector2D a);
 
-    Vector2D multiply(Vector2D a);
+    Vector2D multiply(double a);
 }
