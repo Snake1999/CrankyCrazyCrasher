@@ -9,13 +9,21 @@ public class GameVelocity implements Vector2D {
 
     private int x=0,y=0;
 
+    public GameVelocity(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+    public GameVelocity() {
+        this(0, 0);
+    }
+
     @Override
-    public int getX() {
+    public double getX() {
         return x;
     }
 
     @Override
-    public int getY() {
+    public double getY() {
         return y;
     }
 

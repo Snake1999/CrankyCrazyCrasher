@@ -1,20 +1,30 @@
-package com.snake1999.remix.ballgame.math;
+package com.snake1999.remix.ballgame;
+
+import com.snake1999.remix.ballgame.math.Vector2D;
 
 /**
  * Created by Mulan Lin('Snake1999') on 2016/9/30 10:39.
  */
-class V2DBase implements Vector2D {
+public class V2DBase implements Vector2D {
 
     private int x=0,y=0;
 
-    @Override
-    public int getX() {
-        return 0;
+    public V2DBase(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+    public V2DBase() {
+        this(0, 0);
     }
 
     @Override
-    public int getY() {
-        return 0;
+    public double getX() {
+        return x;
+    }
+
+    @Override
+    public double getY() {
+        return y;
     }
 
     @Override

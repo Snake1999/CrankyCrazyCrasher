@@ -15,7 +15,9 @@ public interface GameObject {
 
     GameVelocity getVelocity();
 
-    void processVelocity(GameVelocity delta);
+    void setVelocity(GameVelocity v);
+
+    void processVelocity();
 
     void displayTo(Graphics2D graphics2D);
 

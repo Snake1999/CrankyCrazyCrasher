@@ -1,5 +1,7 @@
 package com.snake1999.remix.ballgame.math;
 
+import com.snake1999.remix.ballgame.V2DBase;
+
 /**
  * Created by Administrator on 2016/9/29 0029.
  */
@@ -7,11 +9,11 @@ public interface Vector2D {
 
     Vector2D ZERO = new V2DBase();
 
-    int getX();
+    double getX();
 
-    int getY();
+    double getY();
 
-    default int distanceTo(Vector2D a) {
+    default double distanceTo(Vector2D a) {
         return $CollidingTool.distance(this, a);
     }
 
